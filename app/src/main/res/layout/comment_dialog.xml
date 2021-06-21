@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/dialog_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="@color/gray200" />
+
+    <EditText
+        android:id="@+id/edt_dialog_comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نظر خود را وارد کنید..."
+        android:textColorHint="@color/gray400"
+        android:layoutDirection="rtl"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/gray700"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textDirection="rtl" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+
+        <Button
+            android:id="@+id/btn_dialog_save_comment"
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_install"
+            android:fontFamily="@font/behdad"
+            android:text="ثبت"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/img_pro"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/txt_dialog_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/img_pro"
+            android:fontFamily="@font/behdad"
+            android:text="محمدرضا رضایی"
+            android:textColor="@color/gray600"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

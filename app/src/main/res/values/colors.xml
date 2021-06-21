@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#00838F</color>
+    <color name="colorAccent">#4DD0E1</color>
+    <color name="gray500">#9E9E9E</color>
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray600">#757575</color>
+    <color name="crayon500">#00BCD4</color>
+    <color name="crayon200">#80DEEA</color>
+    <color name="crayon300">#4DD0E1</color>
+    <color name="crayon800">#00838F</color>
+    <color name="crayon900">#006064</color>
+    <color name="black">#000000</color>
+    <color name="gray700">#616161</color>
+    <color name="white">#ffffff</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:background="#ffffff"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:id="@+id/rl_fragmentHome_newapp_row_parent">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/imgNewAppRow"
+        tools:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:minLines="1"
+        android:id="@+id/txt_newApp_title"
+        tools:text="قصه های کودکانه"
+        android:layout_below="@+id/imgNewAppRow"
+        android:textColor="#1F1F1F"
+        android:fontFamily="@font/behdad"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رایگان"
+        android:textColor="#666666"
+        android:layout_below="@+id/txt_newApp_title"
+        android:id="@+id/txt_newApp_type"
+        android:layout_marginTop="4dp"/>
+
+
+    <ImageView
+        android:layout_below="@+id/txt_newApp_title"
+        android:src="@drawable/ic_coin"
+        android:layout_toLeftOf="@+id/txt_newApp_type"
+        android:id="@+id/img_newApp_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray200"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_commetRow_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/gray300"
+        android:layoutDirection="rtl">
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rt_commentDetailRow_ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toLeftOf="@+id/txt_commentDetailRow_userName"
+            android:numStars="5"
+            android:progressTint="@color/black"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/txt_commentDetailRow_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            tools:text="مصطفی"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_commentDetailRow_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_commentDetailRow_userName"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            tools:text="خیلی برنامه خوبیه دست شما درد نکنه" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_commentDetailRow_desc">
+
+            <ImageView
+                android:id="@+id/img_commentDetailRow_like"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/txt_commentDetailRow_likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/img_commentDetailRow_like"
+                tools:text="20"
+                android:textColor="@color/crayon900"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/img_commentDetailRow_dislike"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:layout_toLeftOf="@id/img_commentDetailRow_like"
+                android:src="@drawable/ic_dislike"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_commentDetailRow_dislikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/img_commentDetailRow_dislike"
+                tools:text="7"
+                android:layout_centerVertical="true"
+                android:textColor="@color/crayon900"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

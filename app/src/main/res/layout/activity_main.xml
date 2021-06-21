@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#F8F7F8"
+    android:id="@+id/rel_main_parentAllView">
+
+
+
+
+
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:mode="phone">
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_apps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="به روز رسانی‌ها"
+            app:tab_text_color="@color/crayon800"
+            app:tab_icon="@drawable/ic_download_bottom_navigation"
+
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="ویدیو"
+            app:tab_text_color="@color/crayon800"
+            app:tab_icon="@drawable/ic_video_bottom_navigation"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_cats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="مجله"
+            app:tab_text_color="@color/crayon800"
+            app:tab_icon="@drawable/ic_magazine_bottom_navigation"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_tops"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="بازی"
+            app:tab_text_color="@color/crayon800"
+            app:tab_icon="@drawable/ic_joy_stick_bottom_navigation"
+            />
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_text="برنامه"
+            app:tab_text_color="@color/crayon800"
+            app:tab_icon="@drawable/ic_app_bottom_navigation"
+            />
+    </com.ss.bottomnavigation.BottomNavigation>
+
+    <RelativeLayout
+        android:layout_above="@id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_fragment_container"
+        android:background="@color/gray200">
+    </RelativeLayout>
+
+
+</RelativeLayout>

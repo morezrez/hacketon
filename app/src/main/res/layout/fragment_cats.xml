@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray200"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/ic_share"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/ic_share"
+            android:padding="4dp"
+            android:src="@drawable/ic_flag"
+            android:id="@+id/ic_favorite"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_app_icon"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="12dp"
+                    app:riv_mutate_background="true"
+                    android:src="@drawable/book_icc" />
+
+                <TextView
+                    android:id="@+id/txt_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/img_app_icon"
+                    android:fontFamily="@font/behdad"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="کتاب نامیرا" />
+
+                <TextView
+                    android:id="@+id/txt_developer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_app_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/img_app_icon"
+                    android:fontFamily="@font/behdad"
+                    android:textColor="@color/gray700"
+                    android:text="صادق کرمیار" />
+
+                <Button
+                    android:id="@+id/btn_install"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/btn_install"
+                    android:fontFamily="@font/behdad"
+                    android:text="دانلود"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/behdad"
+                    android:textColor="@color/gray700"
+                    android:textSize="8dp"
+                    android:text="رایگان"
+                    android:id="@+id/txt_kind"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/gray300"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_size"
+                        android:fontFamily="@font/behdad"
+                        android:text="2 مگابایت"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/gray300"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_book"
+                        android:layout_gravity="center"
+                        android:id="@+id/img_cat"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/gray300"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_score"
+                        android:fontFamily="@font/behdad"
+                        android:text="4.5"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+
+                    app:cardBackgroundColor="@color/gray300"
+                    app:cardCornerRadius="8dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/crd_install">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_install_count"
+                        android:fontFamily="@font/behdad"
+                        android:text="500"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="حجم"
+                    android:textColor="@color/gray700"
+                    android:fontFamily="@font/behdad"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="مذهبی"
+                    android:textColor="@color/gray700"
+                    android:fontFamily="@font/behdad"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:id="@+id/txt_cat_name"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="امتیاز"
+                    android:textColor="@color/gray700"
+                    android:fontFamily="@font/behdad"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:id="@+id/txt_comment_count"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="تعداد دانلود"
+                    android:textColor="@color/gray700"
+                    android:fontFamily="@font/behdad"
+                    android:layout_marginLeft="8dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/book_sld3"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/book_sld2"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/book_sld"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/gray700"
+                android:fontFamily="@font/behdad"
+                android:id="@+id/txt_fr_detail_desc"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="کربلا اثرگذارترین واقعه‌ی تاریخ اسلام شیعی و نمایش صف کشیدن حق علیه باطل است. یادگار «امیرمؤمنین (ع)» و «فاطمه‌الزهرا (س)» شمشیرها را به آغوش کشید تا دین جدش را زنده نگه‌ دارد و نشان دهد حق همواره پیروز است. بیش از ۱۴ قرن از این رخداد سربلندی و مردانگی می‌گذرد اما هنوز هم می‌توان از این واقعه بسیار آموخت. آنچه واقعه کربلا را رقم زد و نامیراترین مرد تاریخ را به قتل‌گاه برد خیانت مردمانی بود که ادعای دوستی داشتند. چه چیزی بزرگان کوفه را به این‌‌جا کشاند که دستشان به خون نوه‌ی پیامبر آلوده شود؟ نامیرا به زیبایی کوفه را پیش از کربلا روایت می‌کند و فضای پر شک و تردید را به تصویر می‌کشد."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بیشتر"
+                android:fontFamily="@font/behdad"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:id="@+id/txt_fr_detail_more"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray500"
+                android:layout_margin="8dp"/>
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/fr_detail_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_gravity="center"
+                android:theme="@style/RatingBar"
+                />
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="امتیاز شما به این کتاب"
+                android:fontFamily="@font/behdad"
+                android:textColor="@color/gray700"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_fragmentDetail_comments"
+                android:layoutDirection="rtl"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
+
+

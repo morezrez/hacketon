@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray200">
+
+        <include layout="@layout/usual_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:fontFamily="@font/behdad"
+            android:textColor="@color/gray700"
+            android:id="@+id/txt_fr_desc_desc"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"/>
+
+    </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
