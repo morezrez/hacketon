@@ -23,7 +23,7 @@
         android:background="#ffffff"
         app:mode="phone">
         <com.ss.bottomnavigation.TabItem
-            android:id="@+id/tab_apps"
+            android:id="@+id/tab_updates"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -33,7 +33,7 @@
 
             />
         <com.ss.bottomnavigation.TabItem
-            android:id="@+id/tab_search"
+            android:id="@+id/tab_video"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -42,7 +42,7 @@
             app:tab_icon="@drawable/ic_video_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
-            android:id="@+id/tab_cats"
+            android:id="@+id/tab_magazine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -51,7 +51,7 @@
             app:tab_icon="@drawable/ic_magazine_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
-            android:id="@+id/tab_tops"
+            android:id="@+id/tab_games"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -60,7 +60,7 @@
             app:tab_icon="@drawable/ic_joy_stick_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
-            android:id="@+id/tab_home"
+            android:id="@+id/tab_apps"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

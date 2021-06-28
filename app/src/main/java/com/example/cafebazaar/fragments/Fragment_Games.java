@@ -46,7 +46,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Fragment_Home extends Fragment implements BaseSliderView.OnSliderClickListener {
+public class Fragment_Games extends Fragment implements BaseSliderView.OnSliderClickListener {
     //slider
     ArrayList<String> sliderArray;
     private SliderLayout sliderLayout;
@@ -73,7 +73,7 @@ public class Fragment_Home extends Fragment implements BaseSliderView.OnSliderCl
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_games, container, false);
         setupViews(view);
         setSlideForSlider();
         getBanners();
@@ -262,7 +262,7 @@ public class Fragment_Home extends Fragment implements BaseSliderView.OnSliderCl
                     defaultSliderView.
                             image(sliderArray.get(i)).
                             setScaleType(BaseSliderView.ScaleType.Fit).
-                            setOnSliderClickListener(Fragment_Home.this);
+                            setOnSliderClickListener(Fragment_Games.this);
 
                     defaultSliderView.bundle(new Bundle());
                     sliderLayout.addSlider(defaultSliderView);

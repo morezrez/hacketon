@@ -46,7 +46,7 @@ public class Fragment_Account extends Fragment {
                 editor.apply();
                 FragmentManager fragmentManager= ((AppCompatActivity)getContext()).getSupportFragmentManager();
                 FragmentTransaction transaction=fragmentManager.beginTransaction();
-                transaction.replace(R.id.rel_main_parentAllView,new Fragment_Home());
+                transaction.replace(R.id.rel_main_parentAllView,new Fragment_Games());
                 transaction.commit();
                 Toast.makeText(getActivity(), "شما از حساب کاربری خود خارج شدید", Toast.LENGTH_SHORT).show();
 
