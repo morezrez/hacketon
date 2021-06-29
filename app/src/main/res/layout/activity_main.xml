@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:tab_text="به روز رسانی‌ها"
-            app:tab_text_color="@color/crayon800"
+            app:tab_text_color="@color/black"
             app:tab_icon="@drawable/ic_download_bottom_navigation"
 
             />
@@ -38,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:tab_text="ویدیو"
-            app:tab_text_color="@color/crayon800"
+            app:tab_text_color="@color/black"
             app:tab_icon="@drawable/ic_video_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
@@ -47,7 +47,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:tab_text="مجله"
-            app:tab_text_color="@color/crayon800"
+            app:tab_text_color="@color/black"
             app:tab_icon="@drawable/ic_magazine_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:tab_text="بازی"
-            app:tab_text_color="@color/crayon800"
+            app:tab_text_color="@color/black"
             app:tab_icon="@drawable/ic_joy_stick_bottom_navigation"
             />
         <com.ss.bottomnavigation.TabItem
@@ -65,7 +65,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:tab_text="برنامه"
-            app:tab_text_color="@color/crayon800"
+            app:tab_text_color="@color/black"
             app:tab_icon="@drawable/ic_app_bottom_navigation"
             />
     </com.ss.bottomnavigation.BottomNavigation>
