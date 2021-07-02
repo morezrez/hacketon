@@ -2,6 +2,7 @@ package com.example.cafebazaar.retrofit;
 
 import com.example.cafebazaar.models.Model_App;
 import com.example.cafebazaar.models.Model_Banner;
+import com.example.cafebazaar.models.Model_Mag_Sport_Euro2020;
 import com.example.cafebazaar.models.Model_MyComments;
 import com.example.cafebazaar.models.Model_Slider;
 import java.util.List;
@@ -54,5 +55,13 @@ public interface ApiService {
 
     @GET("likedislike.php")
     Call<ResponseBody> setVote(@Query("vote") String vote,@Query("user_id") String userId,@Query("comment_id")String commentId);
+
+    //magazine
+
+    @GET("getSportMagSlider.php")
+    Call<List<Model_Slider>> getSportSliders();
+
+    @GET("getSportMagRVEuro2020.php")
+    Call<List<Model_Mag_Sport_Euro2020>> getSportMagRVEuro2020();
 
 }

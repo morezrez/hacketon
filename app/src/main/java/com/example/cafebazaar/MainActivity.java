@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.cafebazaar.fragments.Fragment_Updates;
-import com.example.cafebazaar.fragments.Fragment_Magazine;
+import com.example.cafebazaar.fragments.magazine.Fragment_Magazine;
 import com.example.cafebazaar.fragments.Fragment_Games;
 import com.example.cafebazaar.fragments.Fragment_Video;
 import com.example.cafebazaar.fragments.Fragment_Apps;

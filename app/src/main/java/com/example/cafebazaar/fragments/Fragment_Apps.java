@@ -48,9 +48,10 @@ import retrofit2.Response;
 
 public class Fragment_Apps extends Fragment implements BaseSliderView.OnSliderClickListener {
     //slider
-    ArrayList<String> sliderArray;
     private SliderLayout sliderLayout;
     List<Model_Slider> sliders;
+    ArrayList<String> sliderArray;
+
 
     //banners
     List<String> bannersArray;

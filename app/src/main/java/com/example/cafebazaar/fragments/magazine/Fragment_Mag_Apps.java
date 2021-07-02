@@ -1,4 +1,4 @@
-package com.example.cafebazaar.fragments;
+package com.example.cafebazaar.fragments.magazine;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 
 import com.example.cafebazaar.R;
 
-public class Fragment_Mag_Sport extends Fragment {
+public class Fragment_Mag_Apps extends Fragment {
 
     View view;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_mag_sport,container,false);
+        view=inflater.inflate(R.layout.fragment_mag_apps,container,false);
 
 
         return  view;

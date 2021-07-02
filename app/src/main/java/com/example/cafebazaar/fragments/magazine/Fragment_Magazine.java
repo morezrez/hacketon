@@ -1,4 +1,4 @@
-package com.example.cafebazaar.fragments;
+package com.example.cafebazaar.fragments.magazine;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
